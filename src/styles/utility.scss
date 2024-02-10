@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+$font-main: "Inter", sans-serif;
+$font-alt: "Inter", sans-serif;
+
+@mixin container {
+  width: 1260px;
+  margin: 0 auto;
+}
+
+@mixin header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin navigation {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  a {
+    text-decoration: none;
+  }
+}
+@mixin hovers {
+  transition: 0.32s;
+}
+@mixin inputs {
+  background-color: #ededed;
+  border-radius: 8px;
+  border: none;
+  height: 48px;
+  width: 100%;
+  padding: 19px 44px;
+  color: #606060;
+  font-size: 15px;
+  &::placeholder {
+    font-family: $font-alt;
+    font-size: 15px;
+    color: #c2c3cb;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+@mixin search {
+  position: relative;
+  .header__search-input {
+    @include inputs;
+  }
+  .header__search-button {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-image: url(/search-btn.svg);
+    background-color: transparent;
+    width: 22px;
+    height: 22px;
+    background-size: cover;
+    border: none;
+  }
+}
+@mixin button {
+  width: fit-content;
+  padding: 16px 24px;
+  border-radius: 10px;
+  font-family: $font-alt;
+  font-size: 16px;
+  cursor: pointer;
+}
+@mixin darkButton {
+  @include button;
+  background-color: #141416;
+  color: #ffffff;
+  border: none;
+}
+@mixin lightButton {
+  @include button;
+  background-color: #ffffff;
+  color: #141416;
+  border: none;
+}
+@mixin transparentDarkButton {
+  @include button;
+  background-color: transparent;
+  color: #141416;
+  border: 1.5px solid #141416;
+}
+@mixin transparentLightButton {
+  @include button;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+}

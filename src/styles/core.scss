@@ -1,0 +1,40 @@
+@import "./utility.scss";
+
+* {
+  font-family: $font-main;
+  box-sizing: border-box;
+}
+.header {
+  @include header;
+  @include container;
+  color: #606060;
+  .header__nav {
+    ul {
+      @include navigation;
+      a {
+        color: #606060;
+      }
+      a:visited {
+        color: #606060;
+      }
+      a:hover {
+        color: #000000;
+        @include hovers;
+      }
+    }
+  }
+  .header__search {
+    @include search;
+    width: 349px;
+  }
+  .header__auth {
+    display: flex;
+    gap: 20px;
+    .header__auth-login {
+      @include darkButton;
+    }
+    .header__auth-reg {
+      @include transparentDarkButton;
+    }
+  }
+}
