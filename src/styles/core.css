@@ -5,103 +5,12 @@
   box-sizing: border-box;
 }
 
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 1260px;
-  margin: 0 auto;
-  color: #606060;
-}
-.header .header__nav ul {
-  list-style: none;
-  display: flex;
-  gap: 50px;
+body {
+  margin: 0;
   padding: 0;
 }
-.header .header__nav ul a {
-  text-decoration: none;
-}
-.header .header__nav ul a {
-  color: #606060;
-}
-.header .header__nav ul a:visited {
-  color: #606060;
-}
-.header .header__nav ul a:hover {
-  color: #000000;
-  transition: 0.32s;
-}
-.header .header__search {
-  position: relative;
-  width: 349px;
-}
-.header .header__search .header__search-input {
-  background-color: #ededed;
-  border-radius: 8px;
-  border: none;
-  height: 48px;
-  width: 100%;
-  padding: 19px 44px;
-  color: #606060;
-  font-size: 15px;
-}
-.header .header__search .header__search-input::-moz-placeholder {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  color: #c2c3cb;
-}
-.header .header__search .header__search-input:-ms-input-placeholder {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  color: #c2c3cb;
-}
-.header .header__search .header__search-input::placeholder {
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  color: #c2c3cb;
-}
-.header .header__search .header__search-input:focus {
-  outline: none;
-}
-.header .header__search .header__search-button {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background-image: url(/search-btn.svg);
-  background-color: transparent;
-  width: 22px;
-  height: 22px;
-  background-size: cover;
-  border: none;
-}
-.header .header__auth {
-  display: flex;
-  gap: 20px;
-}
-.header .header__auth .header__auth-login {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 16px 24px;
-  border-radius: 10px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: #141416;
-  color: #ffffff;
-  border: none;
-}
-.header .header__auth .header__auth-reg {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 16px 24px;
-  border-radius: 10px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  cursor: pointer;
-  background-color: transparent;
-  color: #141416;
-  border: 1.5px solid #141416;
+
+.container {
+  width: 1260px;
+  margin: 0 auto;
 }/*# sourceMappingURL=core.css.map */

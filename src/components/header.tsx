@@ -1,15 +1,18 @@
+"use client";
 import React from "react";
+import { Link } from "react-router-dom";
 import Auth from "./auth";
-import "../styles/core.css";
+import "../styles/header.css";
 
 const Header: React.FC = () => {
   return (
     <header className="header container">
       <img className="header__logo" src="/logo.svg" />
+
       <nav className="header__nav">
         <ul>
           <li>
-            <a href="#">Genres</a>
+            <Link to="/genres">Genres</Link>
           </li>
           <li>
             <a href="#">Directors</a>
